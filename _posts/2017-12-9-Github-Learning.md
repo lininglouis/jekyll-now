@@ -59,5 +59,7 @@ git checkout new_branch
 ```
 
 
+**git pull latest code from remote to local repo**<br>
+git pull origin master
 
 
