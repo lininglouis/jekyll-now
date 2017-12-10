@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-A python developer
+WHUer; A python developer; 
 image processing
 object detection
 
