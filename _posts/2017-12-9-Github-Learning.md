@@ -63,3 +63,10 @@ git checkout new_branch
 git pull origin master
 
 
+**contribute to the code procedure**<br>
+1. fork the repo to your own github
+2. create a branch (git checkout -b new_branch
+3. modify the code, then git add it, git commit it.
+4. git push the code to your own remote repo
+5. create pull request
+
