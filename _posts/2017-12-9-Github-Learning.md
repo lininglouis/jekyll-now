@@ -1,6 +1,3 @@
-# github-learning
-
-
 **pull a specific fork** <br>
 ```
 git clone official git_repo
