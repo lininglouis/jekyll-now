@@ -44,7 +44,7 @@ If you make a mistake when using ImageNet data and the default [103.939, 116.779
     
     # those two means in BGR channel should be the same
     assert(img_cv2_BGR.mean(axis=(0,1)),  img_PIL_BGR.mean(axis=(0, 1)))
-    
+```    
 
 The core function in Keras is the _preprocess_numpy_input function in imagenet.utils.py<br>
 ```python
