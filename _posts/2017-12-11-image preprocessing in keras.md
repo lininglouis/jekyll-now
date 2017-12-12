@@ -22,13 +22,14 @@ This is preocessing in ImageNet data, it substract the mean [103.939, 116.779, 1
 ```
 
 If you have your own customized data, then <br>
+```python               
         img_mean = img.mean(axis=(0,1))
         img[:, :, :] -= img_mean 
 #        you may also do like this        
 #        img[:, :, :] -= img_mean[0] #B
 #        img[1, :, :] -= img_mean[1] #G
 #        img[2, :, :] -= img_mean[2] #R
-
+```
 
 
 if you dont use preprocessing data, and hope to combine opencv and the same zero-center processing, just be aware of the BGR and RGB channel. If you make a mistake when using ImageNet data and the default [103.939, 116.779, 123.68] mean in BGR channel, you might get something wrong. 
