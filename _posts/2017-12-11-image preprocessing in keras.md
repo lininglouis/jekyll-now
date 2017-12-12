@@ -32,7 +32,9 @@ If you have your own customized data, then <br>
 ```
 
 
-if you dont use preprocessing data, and hope to combine opencv and the same zero-center processing, just be aware of the BGR and RGB channel. If you make a mistake when using ImageNet data and the default [103.939, 116.779, 123.68] mean in BGR channel, you might get something wrong. 
+if you dont use preprocessing data, and hope to combine opencv and the same zero-center processing, just be aware of the BGR and RGB channel in PIL and opencv. <br>
+**Opencv will read data into array with BGR order.  PIL will read them with RGB order in the array.**<br>
+If you make a mistake when using ImageNet data and the default [103.939, 116.779, 123.68] mean in BGR channel, you might get something wrong. 
 ```python
     img_path = ./xxx.jpg
     img_cv2_BGR = cv2.imread(img_path)
