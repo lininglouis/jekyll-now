@@ -1,3 +1,5 @@
+# understand the image preprocessing_input in keras
+
 two types of preprocessing in  the preprocessing_input function of Keras
 
 One types: "tf" mode, **zerp-cemter and normalize to  [-1,1]**<br>
