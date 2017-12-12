@@ -1,4 +1,4 @@
-# understand the image preprocessing_input in keras
+Understand the image preprocessing_input in keras
 
 two types of preprocessing in  the preprocessing_input function of Keras
 
