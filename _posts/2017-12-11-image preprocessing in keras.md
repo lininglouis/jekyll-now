@@ -45,7 +45,7 @@ If you make a mistake when using ImageNet data and the default [103.939, 116.779
     img_PIL_BGR = cv2.cvtColor(img_PIL_RGB, cv2.COLOR_RGB2BGR)
     
     # those two means in BGR channel should be the same
-    assert(img_cv2_BGR.mean(axis=(0,1)),  img_PIL_BGR.mean(axis=(0, 1)))
+    assert(img_cv2_BGR.mean(axis=(0,1)) == img_PIL_BGR.mean(axis=(0, 1)))
 ```    
 
 The core function in Keras is the _preprocess_numpy_input function in imagenet.utils.py<br>
