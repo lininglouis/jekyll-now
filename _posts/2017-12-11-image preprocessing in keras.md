@@ -28,7 +28,7 @@ If you have your own customized data, then <br>
         img_mean = img.mean(axis=(0,1))
         img[:, :, :] -= img_mean 
 #        you may also do like this        
-#        img[:, :, :] -= img_mean[0] #B
+#        img[0, :, :] -= img_mean[0] #B
 #        img[1, :, :] -= img_mean[1] #G
 #        img[2, :, :] -= img_mean[2] #R
 ```
