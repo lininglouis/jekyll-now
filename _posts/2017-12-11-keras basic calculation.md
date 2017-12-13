@@ -9,7 +9,7 @@ def getMaxPoolOutputShape(imageSideLength, kernel,stride): #no padding for maxpo
 ```
 
 
-**Parmeters number for Conv2D**
+**Parmeters number for Conv2D**<br>
 by default image_channel is 3, (RGB channels) <br>
 ```
 total parameter for one Conv2D layer =  filters_num * (kernel_size * kernel_size * image_channel  + 1)  
