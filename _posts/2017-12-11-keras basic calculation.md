@@ -19,10 +19,9 @@ each filter need 1 bias parameter, so we add 1 for each filter
 
 
 **keras epochs, batch, iterations, and steps_per_epoch** <br>
-say you have 512 train data, batch size is 32<br>
-your batch_size is 32,  <br>
-you need 512/32 = 16 iterations to finish fit all the train data fro the first time.
-And at that time you finished 1st epoch. If you do another 16 iterations, you will finish the 2nd epoch.<br>
+say you have 512 train data, **batch size** is 32<br>
+you need 512/32 = 16 **iterations** to finish fit all the train data fro the first time.
+And at that time you finished 1st **epoch**. If you do another 16 iterations with the batch_size 32, and go through the whole data in the second time, you will finish the 2nd **epoch**.<br>
 
 Typically, **steps_per_epoch** = data_size // batch_size (it is the same as the **iterations** you need to go through for one epoch). You can give it other values if you need to.
 
