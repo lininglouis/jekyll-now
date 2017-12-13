@@ -14,7 +14,7 @@ by default image_channel is 3, (RGB channels) <br>
 ```
 total parameter for one Conv2D layer =  filters_num * (kernel_size * kernel_size * image_channel  + 1)  
 ```
-each filter need 1 bias parameter, so we add 1 for each filter
+Since each filter need 1 bias parameter, we add 1 in the formula
 
 
 
