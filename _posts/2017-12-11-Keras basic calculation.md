@@ -25,3 +25,5 @@ And at that time you finished 1st **epoch**. If you do another 16 iterations wit
 Typically, **steps_per_epoch** = data_size // batch_size (it is the same as the **iterations** you need to go through for one epoch). You can give it other values if you need to.
 
 
+<br><br>**Good gitbook for keras**<br>
+https://ustczen.gitbooks.io/keras/content/optimizers.html
