@@ -2,10 +2,10 @@
 **function for calculation output shape**<br>
 ```python
 def getConv2DOutputShape(imageSideLength, kernel, padding,stride):
-    return  (imageSide+2*padding-kernel)/stride + 1
+    return  (imageSideLength+2*padding-kernel)/stride + 1
     
 def getMaxPoolOutputShape(imageSideLength, kernel,stride): #no padding for maxpool
-    return  (imageSide-kernel)/stride + 1
+    return  (imageSideLength-kernel)/stride + 1
 ```
 
 
