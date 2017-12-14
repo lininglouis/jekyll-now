@@ -7,5 +7,12 @@ There are some cheap GPU instance on AWS. Usually the basic type of that series 
 
 | Instance | GPU type |	Computing Capability | GPUs	| GPU Memory	| vCPUs	| Main Memory	| Storage | Storage Statistics | spot price |
 | ------------- | ------------- |	------------- | -------------	|------------- |-------------	| -------------	| ------------- | -------------| ------------- |
+|g2 instance |	GRID  K520| 3.0| --|8GB| 8|15GB | SSD	 | 61GB SSD storage |~0.27$/h|
+|p2 instance |Tesla K80|3.7| 1 | 12GB |4| 61GB| EBS | High | ~0.3$/h|
+|g3.4xlarge | Tesla M60| 5.2 |	1 | 8GB| 16	| 122GB| EBS |3.5 Gbps | ~0.4$/h|
+|p3 instance | Tesla V100|7.0| 1| 16GB | 8 | 61 GB | EBS |1.5Gbps | ~1-1.5$/h|
+
+
+Computing Capability refer to https://developer.nvidia.com/cuda-gpus<br>
 
  
