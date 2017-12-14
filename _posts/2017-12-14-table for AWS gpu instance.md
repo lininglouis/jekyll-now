@@ -6,5 +6,6 @@ There are some cheap GPU instance on AWS. Usually the basic type of that series 
 | ------------- |-------------| -----|
 
 | Instance | GPU type |	Computing Capability | GPUs	| GPU Memory	| vCPUs	| Main Memory	| Storage | Storage Statistics | spot price |
-| ------------- |:-------------:| -----:|
+| ------------- | ------------- |	------------- | -------------	|------------- |-------------	| -------------	| ------------- | -------------| ------------- |
 
+ 
