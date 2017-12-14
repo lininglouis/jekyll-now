@@ -24,7 +24,8 @@ usually, when the new instance come out, it will be cheaper in spot intances pri
 **Unexpected break when using some instances in west zone - Oregon**<br> 
 Oregon west zone might be the most latest zone, most latest instance seems to be firstly deployed in this zone, and then AWS will apply to some other zone.<br> 
 But so many users are also in this zone, so the price is usually a little more expensive than other zone.<br>
-But the most important bad part is, sometimes, when I bid some instance, it will stop for no reason. In the beginning, I thought it might because of my maximum price is too low. Say P2 instance, now is 0.27$/hour, but sometimes it increases to 1.2$/h. If I set my maximum acceptable is 0.8$/h, then my machine will stop suddenly. But later on, even I set the price to be 2$/h, and I have make sure that the maximum before my machine stop is much lower than that.  Still, it will stop for no reason.  <br>
+But the most important bad part is, sometimes, when I bid some instance, it will stop for no reason. In the beginning, I thought it might because of my maximum price is too low. Say P2 instance, now is 0.27$/hour, but sometimes it increases to 1.2$/h. If I set my maximum acceptable is 0.8$/h, then my machine will stop suddenly. <br>
+But even I set the price to be 2$/h, and I have made sure that the history price before my machine stop is much lower than that.  Still, it will stop for no reason.  <br>
 Hence, I switch to east region, it does provide more stable service(May be just because less user use it in this region. <br>
 When you immigrate to a new region(Ohio), if you still want to use your previous ami in the the previous region(Oregon for example), you might need to copy it to your new zone.
  
