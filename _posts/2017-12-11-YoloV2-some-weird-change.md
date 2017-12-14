@@ -1,4 +1,3 @@
-# YoloV2-some-weird-change
 
 I used the yolov2  since 2016,  I dont have problem with it. <br>
 But when I retrain the data using YoloV2 latest in November, I cannot detect anything. <br>
