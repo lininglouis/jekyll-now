@@ -21,7 +21,7 @@ if you dont have that many images, and hope to get better computing speed, then 
 
 usually, when the new instance come out, it will be cheaper in spot intances pricing. But will increase a lot <br>
 
-**Unexpected break when using some instances in west zone - Oregon**
+**Unexpected break when using some instances in west zone - Oregon**<br> 
 Oregon west zone might be the most latest zone, most latest instance seems to be firstly deployed in this zone, and then AWS will apply to some other zone.<br> 
 But so many users are also in this zone, so the price is usually a little more expensive than other zone.<br>
 But the most important bad part is, sometimes, when I bid some instance, it will stop for no reason. In the beginning, I thought it might because of my maximum price is too low. Say P2 instance, now is 0.27$/hour, but sometimes it increases to 1.2$/h. If I set my maximum acceptable is 0.8$/h, then my machine will stop suddenly. But later on, even I set the price to be 2$/h, and I have make sure that the maximum before my machine stop is much lower than that.  Still, it will stop for no reason.  <br>
