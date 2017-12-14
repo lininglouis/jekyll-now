@@ -38,9 +38,14 @@ img_cv2.astype(np.double).mean()
 76.861254112045145
 ```
 
+**PIL Image**
+if you read image using PIL, then by default, it  should be np.float32 format.
+So if calculate image channel mean in opencv uint8, and PIL image_to_array,  then you might find the difference in the channel mean, which is pretty weird. Thats actually because of the difference of np.float32, and np.double.
+
+
 
 **Summary**<br>
-in a word, the uin8 statistics is the same as the np.double.   The np.float32 is somehow inconsistent with other two format. Not sure the reason.
+in a word, the uin8 statistics is the same as the np.double.   The np.float32 is somehow inconsistent with other two format. Not sure the reason.  The large your image is, the more inconsistency will be.
 
 
 
