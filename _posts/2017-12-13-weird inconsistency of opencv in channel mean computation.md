@@ -6,7 +6,7 @@ c=img_cv2.astype(np.double).mean(axis=(0,1))
 #array([ 66.6539235 ,  75.00896196,  88.92087688])
 ```
 
-#channel mean<br>
+#channel mean  <h1> tag
 **default cv2 uint8 mean**
 ```
 img_cv2.mean(axis=(0,1))
