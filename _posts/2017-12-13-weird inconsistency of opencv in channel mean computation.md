@@ -39,7 +39,7 @@ img_cv2.astype(np.double).mean()
 ```
 
 
-**summary**
+**Summary**<br>
 in a word, the uin8 statistics is the same as the np.double.   The np.float32 is somehow inconsistent with other two format. Not sure the reason.
 
 
