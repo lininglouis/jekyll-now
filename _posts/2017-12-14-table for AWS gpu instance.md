@@ -14,7 +14,7 @@ There are some cheap GPU instance on AWS. Usually the basic type of that series 
 Computing Capability refer to https://developer.nvidia.com/cuda-gpus<br>
 
  
-My experience;
-you can start to use G2, since it is the cheapest. You can finish your configuration of your environment. Once you get it done, you can create your AMI, and move to some better intance to train your model.  Since difference intance has **difference GPU computing capability**, you might need to **rebuild your files**(for caffe or yolo). make clean; make -j16; make pycaffe.  Otherwise, caffe or yolo might give you some weird errors.
+My experience <br>
+you can start to use G2, since it is the cheapest. You can finish your configuration of your environment. Once you get it done, you can create your AMI, and move to some better intance to train your model.  Since difference intance has **difference GPU computing capability**, you might need to **rebuild your files**(for caffe or yolo). make clean; make -j16; make pycaffe.  Otherwise, caffe or yolo might give you some weird errors.c
 if you hope to use larger GPU Memory, and increase your batch size, P2 is good, cheaper, and larger GPU memory.
-if you dont have that many images, then use G3.
+if you dont have that many images, and hope to get better computing speed, then use G3.
