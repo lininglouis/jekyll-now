@@ -9,6 +9,6 @@ https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9
 
 mkl_intel install<br>
 https://software.intel.com/en-us/articles/intel-mkl-dnn-part-1-library-overview-and-installation
-
-
+configuration
+https://stackoverflow.com/questions/45788770/cannot-run-tensorflow-compiled-with-mkl
 
