@@ -28,6 +28,17 @@
 
 
 <script>
+	L.Map = L.Map.extend({
+	    openPopup: function(popup) {
+	        //        this.closePopup();  // just comment this
+	        this._popup = popup;
+
+	        return this.addLayer(popup).fire('popupopen', {
+	            popup: this._popup
+	        });
+	    }
+	}); /***  end of hack ***/
+
 
 	var wuhan;
 
@@ -81,16 +92,6 @@
 		});
 	}
 
-	L.Map = L.Map.extend({
-	    openPopup: function(popup) {
-	        //        this.closePopup();  // just comment this
-	        this._popup = popup;
-
-	        return this.addLayer(popup).fire('popupopen', {
-	            popup: this._popup
-	        });
-	    }
-	}); /***  end of hack ***/
 
 	var mymap = L.map('mapid').setView([30.5928, 114.3055], 12);
  
@@ -130,7 +131,7 @@
 			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 		id: 'mapbox/streets-v11'
 	}).addTo(mymap);
-	
+
 	var marker_1 = L.marker([30.631195,114.381374], {icon: greenIcon}).addTo(mymap);
 	marker_1.bindPopup("1, 武汉市普仁医院, 61, 男 ").openPopup();
 	var marker_2 = L.marker([30.613961,114.273273], {icon: greenIcon}).addTo(mymap);
