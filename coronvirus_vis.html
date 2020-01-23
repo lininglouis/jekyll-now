@@ -50,26 +50,7 @@
 			fillOpacity: 0,
 		};
 	}
-
  
- 	//define control
-	var info = L.control();
-
-	info.onAdd = function (map) {
-		this._div = L.DomUtil.create('div', 'info');
-		this.update();
-		return this._div;
-	};
-
-	info.update = function (props) {
-		this._div.innerHTML = '<h4>US Population Density</h4>' +  (props ?
-			'<b>' + props.name + '</b><br />' 
-			: 'Hover over a state');
-	};
- 
-	info.addTo(map);
-
-
 
 	function highlightFeature(e) {
 		var layer = e.target;
@@ -102,9 +83,7 @@
 
 
 	var mymap = L.map('mapid').setView([30.5928, 114.3055], 12);
-	
-
-
+ 
 	var provinces = L.geoJson(provinces_poly, {
 		style: provinces_json_style
 	}).addTo(mymap);
@@ -166,9 +145,7 @@
 	marker_16.bindPopup("16, 武汉市第一医院, 70, 女 ");
 	var marker_17 = L.marker([30.547532, 114.271386], {icon: greenIcon}).addTo(mymap);
 	marker_17.bindPopup("17, 武汉市第五医院, 84, 男 ");
-		
-
-
+ 
  
 	
 	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
@@ -178,7 +155,7 @@
 			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 		id: 'mapbox/streets-v11'
 	}).addTo(mymap);
-	marker_;
+ 
 
 </script>
 
