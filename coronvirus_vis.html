@@ -171,7 +171,7 @@
 	    pointToLayer: function(feature,latlng){
 	       label = String(feature.properties.name) // .bindTooltip can't use straight 'feature.properties.attribute'
      	    return new L.CircleMarker(latlng, {
-	      radius: 1,
+	      radius: 100,
 	    }).bindTooltip(label, {permanent: true, opacity: 0.7}).openTooltip();
 	    }
 	  }).addTo(mymap).bringToFront();;
