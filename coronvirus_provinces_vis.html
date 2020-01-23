@@ -67,7 +67,7 @@
 	}
 
 // Xian
-	var mymap = L.map('mapid').setView([34.3416, 108.9398], 4);
+	var mymap = L.map('mapid').setView([34.3416, 108.9398], 5);
  
 	var provinces = L.geoJson(provinces_poly, {
 		style: provinces_json_style
@@ -84,8 +84,8 @@
  
  
  
-	var wuhan = L.geoJSON(null, {
-		style: wuhan_json_style,
+	var provinces = L.geoJSON(null, {
+		style: provinces_json_style,
 		onEachFeature: onEachFeature,
 
 	    pointToLayer: function(feature,latlng){
@@ -95,8 +95,8 @@
 	    }).bindTooltip(label, {permanent: true, opacity: 0.7}).openTooltip();
 	    }
 	  }).addTo(mymap).bringToFront();;
-	wuhan.addData(wuhan_poly);
-	mymap.addLayer(wuhan);
+	provinces.addData(provinces_poly);
+	mymap.addLayer(provinces);
 	 
  
 
