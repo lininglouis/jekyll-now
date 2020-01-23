@@ -166,7 +166,7 @@
  
 	var wuhan = L.geoJSON(null, {
 		style: wuhan_json_style,
-		onEachFeature: onEachFeature
+		onEachFeature: onEachFeature,
 
 	    pointToLayer: function(feature,latlng){
 	       label = String(feature.properties.name) // .bindTooltip can't use straight 'feature.properties.attribute'
