@@ -22,10 +22,18 @@
 <div id="mapid" style=" height: 100vh;  width: 100vw;"></div>
 
 <script lang="javascript" src="dist/xlsx.full.min.js"></script>
-	
+<script type="text/javascript" src="wuhan.json"></script>	
+
+
 <script>
  
 	var mymap = L.map('mapid').setView([30.5928, 114.3055], 12);
+
+	var wuhan = L.geoJson(wuhan_poly).addTo(mymap)
+
+
+
+
 	var greenIcon = new L.Icon({
 	  iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png',
 	  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
