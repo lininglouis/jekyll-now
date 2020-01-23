@@ -22,7 +22,7 @@
 
 <script lang="javascript" src="dist/xlsx.full.min.js"></script>
 <script type="text/javascript" src="wuhan.json"></script>	
-<script type="text/javascript" src="provinces.json"></script>	
+<script type="text/javascript" src="provinces_virus_jan_22.json"></script>	
 
 
 <script>
@@ -95,7 +95,7 @@
 	    }).bindTooltip(label, {permanent: true, opacity: 0.7}).openTooltip();
 	    }
 	  }).addTo(mymap).bringToFront();;
-	provinces.addData(provinces_poly);
+	provinces.addData(provinces_virus_jan_22);
 	mymap.addLayer(provinces);
 	 
  
