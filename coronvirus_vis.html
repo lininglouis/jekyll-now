@@ -30,7 +30,7 @@
 
 	function wuhan_json_style(feature) {
 		return {
-			weight: 5,
+			weight: 3,
 			opacity: 1,
 			color: 'black',
 			dashArray: '3',
@@ -40,7 +40,7 @@
 
 	function provinces_json_style(feature) {
 		return {
-			weight: 5,
+			weight: 3,
 			opacity: 1,
 			color: 'white',
 			dashArray: '3',
@@ -56,7 +56,7 @@
 	}).addTo(mymap);
 
 	var provinces = L.geoJson(provinces, {
-		style: wuhan_json_style
+		style: provinces_json_style
 	}).addTo(mymap);
  
 	var greenIcon = new L.Icon({
