@@ -70,7 +70,7 @@
 
 	// get color depending on population density value
 	function getColor(d) {
-		return d > 100 ? '#800026' :
+		return          d > 100 ? '#800026' :
 				d > 50  ? '#BD0026' :
 				d > 10  ? '#E31A1C' :
 				d > 5  ? '#FC4E2A' :
@@ -86,7 +86,7 @@
 			color: 'black',
 			dashArray: '3',
 			fillOpacity: 0.7,
-			fillColor: getColor(feature.properties.confirm_cases_012224)
+			fillColor: getColor(feature.properties.confirm_cases_012124)
 		};
 	}
 
