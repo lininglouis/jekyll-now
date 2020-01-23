@@ -41,7 +41,7 @@
 	function provinces_json_style(feature) {
 		return {
 			weight: 3,
-			opacity: 1,
+			opacity: 0.4,
 			color: 'white',
 			dashArray: '3',
 			fillOpacity: 0.1,
@@ -55,9 +55,9 @@
 		style: wuhan_json_style
 	}).addTo(mymap);
 
-	// var provinces = L.geoJson(provinces, {
-	// 	style: provinces_json_style
-	// }).addTo(mymap);
+	var provinces = L.geoJson(provinces, {
+		style: provinces_json_style
+	}).addTo(mymap);
  
 	var greenIcon = new L.Icon({
 	  iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png',
