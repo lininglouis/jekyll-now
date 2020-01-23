@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+.index_title{margin-top:24px;border-bottom:1px solid #dfdfdf;height:32px;}
+.index_title h3{font-size:20px;color:#000;border-bottom:1px solid #004d95;}
+.fl{float:left;}
+.fr{float:right;}
+.loc{padding-left:18px;background:url(../images/loc_pic_03.png) no-repeat left center;color:#ababab;font-size:12px;font-family:"宋体";}
+.loc a{font-size:12px;font-family:"宋体";color:#ababab;}
+.list{border:1px solid #e6e6e6;margin-top:16px;padding:18px 20px 20px 24px;}
+.list li{padding-left:21px;background:url(../images/gray_03.png) no-repeat left center;height:36px;line-height:36px;font-size:16px;}
+.zxxx_list .line{border-bottom:1px solid #e6e6e6;margin-bottom:19px;padding-bottom:12px;}
+.zxxx_list li .ml{margin-left:25px;color:#999;}
+
+/******文章页*******/
+.list .tit{width:100%;text-align:center;line-height:35px;font-size:24px;color:#1966a7;}
+.list .tit span{line-height:35px;font-size:24px;color:#1966a7;}
+.source{margin-top:18px;height:36px;border-bottom:1px solid #e5e5e5;text-align:center;}
+.source span{font-size:12px;font-family:"微软雅黑";color:#979797;}
+.source .mr{margin-left:10px;}
+.source .fr span{margin: 0px 4px 0 3px;}
+.con{padding:15px;min-height:200px;font-size:16px;color:#474646;}
+.fx {line-height: 28px; height: 28px;padding: 20px 0;width: 200px;}
+
+/*-------二级列表---------*/
+.zwgkleft{width:700px;border-right:1px solid #e3e3e3;padding-right:20px;margin-top:24px;}
+.zwgktitle{height:39px;line-height:39px;border-bottom:1px solid #cfcfcf;font-size:20px;font-family: "黑体"; font-weight:bold;}
+.zwgklist{}
+.zwgklist li{margin-top:10px;}
+.zwgklist li h3{height:36px;line-height:36px;font-size:16px;font-weight:normal;color:#373737;}
+.zwgklist li h3 a{font-size:16px;color:#373737;}
+.zwgklist li p{font-size:12px;font-family:'宋体';color:#817f7f;line-height:22px;}
+.zwgklist li div{height:28px;line-height:28px;font-size:12px;color:#9a9a9a;}
+.zwgklist li .tt{font-size:18px;color:#9d1515;}
+
+.zwgkright{width:244px;padding:3px 18px 18px 18px;background:#f1f1f1;margin-top:24px;}
+.zwtitle{line-height:40px;border-bottom:1px solid #004d95;font-size:18px;font-family: "黑体";font-weight:bold;}
+.zwrlist{}
+.zwrlist li{height:43px;background:#fff;margin-top:8px;text-align:center;line-height:43px;color:#5d5d5d;font-size:16px;border-radius:2px;box-shadow:inset 0px 1px 1px #d7d7d7;}
+.zwrlist li a{color:#5d5d5d;font-size:16px;}
+.zwrlist .hover{background:#004d95;color:#fff;box-shadow:none;}
+.zwrlist .hover a{color:#fff;}
+
+/*---------------手机版添加---------------*/
+@media(max-width:768px){
+	.list{padding:0px;border:0px;}
+	.loc{display:none;}
+	.index_title{margin-top:1rem;}
+	.list li{padding-left:1rem;}
+	.zxxx_list li a{overflow:hidden;white-space: nowrap;text-overflow: ellipsis;width:70%;height:36px;display:block;float:left;font-size:1.4rem;}
+	.zxxx_list li .ml{margin-left:0px; float: right;font-size:1.4rem;}
+	
+	.zcwjlist li a{overflow:hidden;white-space: nowrap;text-overflow: ellipsis;width:52%;height:36px;display:block;float:left;font-size:1.4rem;}
+	.zcwjlist li .ml{margin-left:0px; float: right;font-size:1.4rem; color:#999;}
+	.zcwjlist li span:nth-child(1){float:left;}
+	.con{padding:1.2rem 0 0 0;}
+	.source img{display:none;}
+}
+@media(max-width:320px){
+	.zcwjlist li a{width:50%;}
+}
