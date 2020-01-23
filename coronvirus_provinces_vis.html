@@ -30,11 +30,11 @@
  
 
 // Xian
-	var mymap = L.map('mapid').setView([34.3416, 108.9398], 5);
+	var map = L.map('mapid').setView([34.3416, 108.9398], 5);
  
 	// var provinces = L.geoJson(provinces_poly, {
 	// 	style: provinces_json_style
-	// }).addTo(mymap);
+	// }).addTo(map);
  
   
 	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
@@ -43,7 +43,7 @@
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
 			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 		id: 'mapbox/streets-v11'
-	}).addTo(mymap);
+	}).addTo(map);
  
 
  	// control that shows state info on hover
@@ -61,7 +61,7 @@
 			: 'Hover over a provinces');
 	};
 
-	info.addTo(mymap);
+	info.addTo(map);
 
 
 	// get color depending on population density value
@@ -130,9 +130,9 @@
 	      radius: 100,
 	    }).bindTooltip(label, {permanent: true, opacity: 0.7}).openTooltip();
 	    }
-	  }).addTo(mymap).bringToFront();;
+	  }).addTo(map).bringToFront();;
 	provinces.addData(provinces_virus_jan_22);
-	mymap.addLayer(provinces);
+	map.addLayer(provinces);
 	 
  
 
