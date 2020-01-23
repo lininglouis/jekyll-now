@@ -51,14 +51,16 @@
  
 	var mymap = L.map('mapid').setView([30.5928, 114.3055], 12);
 	
-	var wuhan = L.geoJson(wuhan_poly, {
-		style: wuhan_json_style
-	}).addTo(mymap);
+
 
 	var provinces = L.geoJson(provinces, {
 		//style: provinces_json_style
 	}).addTo(mymap);
  
+ // 	var wuhan = L.geoJson(wuhan_poly, {
+	// 	style: wuhan_json_style
+	// }).addTo(mymap).bringToFront();
+	
 	var greenIcon = new L.Icon({
 	  iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png',
 	  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
