@@ -168,8 +168,17 @@
 	marker_17.bindPopup("17, 武汉市第五医院, 84, 男 ");
  
  
-
- 
+	var pointLayer = L.geoJSON(null, {
+	  pointToLayer: function(feature,latlng){
+	    label = String(feature.properties.name) // .bindTooltip can't use straight 'feature.properties.attribute'
+	    return new L.CircleMarker(latlng, {
+	      radius: 1,
+	    }).bindTooltip(label, {permanent: true, opacity: 0.7}).openTooltip();
+	    }
+	  });
+	pointLayer.addData(data_points);
+	mymap.addLayer(pointLayer);
+	 
 
 </script>
 
