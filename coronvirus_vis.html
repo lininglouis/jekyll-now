@@ -27,8 +27,7 @@
  
 	var mymap = L.map('mapid').setView([30.5928, 114.3055], 12);
 
-	var marker_1 = L.marker([30.631195,114.381374]).addTo(mymap);
-	marker_1.bindPopup("1, 武汉市普仁医院, 61, 男 ");
+	L.marker([30.631195,114.381374]).addTo(mymap).bindPopup("1, 武汉市普仁医院, 61, 男 ");
 	// var marker_2 = L.marker([30.613961,114.273273]).addTo(mymap).bindPopup("2, 武汉市红十字会医院, 69, 男 ");
 	// var marker_3 = L.marker([30.578616,114.261047]).addTo(mymap).bindPopup("3, 同济医院泌尿外科, 89, 男 ");
 	// var marker_4 = L.marker([30.584232,114.276144]).addTo(mymap).bindPopup("4, 武汉协和医院急诊科救治, 89, 男 ");
