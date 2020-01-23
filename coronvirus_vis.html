@@ -20,13 +20,30 @@
 
 
 <div id="mapid" style=" height: 100vh;  width: 100vw;"></div>
- 
+
+<script lang="javascript" src="dist/xlsx.full.min.js"></script>
+	
 <script>
  
 	var mymap = L.map('mapid').setView([30.5928, 114.3055], 12);
 
-	var marker = L.marker([30.547532, 114.271386]).addTo(mymap);
-	marker.bindPopup("武汉市第五医院.")
+	var marker_1 = L.marker([30.631195,114.381374]).addTo(mymap).bindPopup("1, 武汉市普仁医院, 61, 男 ");
+	var marker_2 = L.marker([30.613961,114.273273]).addTo(mymap).bindPopup("2, 武汉市红十字会医院, 69, 男 ");
+	var marker_3 = L.marker([30.578616,114.261047]).addTo(mymap).bindPopup("3, 同济医院泌尿外科, 89, 男 ");
+	var marker_4 = L.marker([30.584232,114.276144]).addTo(mymap).bindPopup("4, 武汉协和医院急诊科救治, 89, 男 ");
+	var marker_5 = L.marker([30.631319,114.403934]).addTo(mymap).bindPopup("5, 武钢总医院, 66, 男 ");
+	var marker_6 = L.marker([30.547532，114.271386]).addTo(mymap).bindPopup("6, 武汉市第五医院, 75, 男 ");
+	var marker_7 = L.marker([30.579004,114.262167]).addTo(mymap).bindPopup("7, 同济医院, 48, 女 ");
+	var marker_8 = L.marker([30.547532，114.271386]).addTo(mymap).bindPopup("8, 武汉市第五医院, 82, 男");
+	var marker_9 = L.marker([30.581137,114.29573]).addTo(mymap).bindPopup("9, 武汉市中心医院, 66, 男 ");
+	var marker_10 = L.marker([30.571951,114.271925]).addTo(mymap).bindPopup("10, 武汉市第一医院, 81, 男");
+	var marker_11 = L.marker([30.608304,114.273847]).addTo(mymap).bindPopup("11, 湖北省中西医结合医院, 82, 女");
+	var marker_12 = L.marker([30.571951,114.271925]).addTo(mymap).bindPopup("12, 武汉市第一医院, 65, 男 ");
+	var marker_13 = L.marker([30.632104,114.40401]).addTo(mymap).bindPopup("13, 华润武钢总医院, 80, 女");
+	var marker_14 = L.marker([30.579004,114.262167]).addTo(mymap).bindPopup("14, 同济医院急诊科就诊, 53, 男 ");
+	var marker_15 = L.marker([30.607733,114.273404 ]).addTo(mymap).bindPopup("15, 湖北省新华医院, 86, 男 ");
+	var marker_16 = L.marker([30.571951,114.271925]).addTo(mymap).bindPopup("16, 武汉市第一医院, 70, 女 ");
+	var marker_17 = L.marker([30.547532，114.271386]).addTo(mymap).bindPopup("17, 武汉市第五医院, 84, 男 ");
 	
 	
 	
