@@ -27,18 +27,6 @@
 
 <script>
  
-	var wuhan;
-
-	function wuhan_json_style(feature) {
-		return {
-			weight: 2,
-			opacity: 1,
-			color: 'black',
-			dashArray: '3',
-			fillOpacity: 0.0,
-		};
-	}
-
 	function provinces_json_style(feature) {
 		return {
 			weight: 2,
@@ -49,7 +37,6 @@
 		};
 	}
  
-
 	function highlightFeature(e) {
 		var layer = e.target;
 
@@ -80,7 +67,7 @@
 	}
 
 
-	var mymap = L.map('mapid').setView([30.5928, 114.3055], 12);
+	var mymap = L.map('mapid').setView([30.5928, 114.3055], 6);
  
 	var provinces = L.geoJson(provinces_poly, {
 		style: provinces_json_style
